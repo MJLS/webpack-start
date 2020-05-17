@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>WebPack - Server </title>
+</head>
+
+
+<body>
+ <!-- Esto s comentarios no aparecerán en la en index de dist -->
+ <!--       Asset       Size  Chunks             Chunk Names
+./index.html  248 bytes          [emitted]  
+     main.js   5.57 KiB    main  [emitted]  main
+Entrypoint main = main.js
+[./src/index.js] 374 bytes {main} [built]
+[./src/js/componentes.js] 683 bytes {main} [built]
+Child html-webpack-plugin for "index.html":
+     1 asset
+    Entrypoint undefined = ./index.html
+    [./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html] 235 bytes {0} [built]
+Manuels-MBP:07_Webpack-inicial manuellopez$   -->
+
+
+ <img src="assets/descarga.png" alt="Wp logo">
+
+ <!--  Nos dá un error porque webpack no sabe que hacer con este recurso  -->
+
+ <!--  Html Webpack Plugin:
+ Error: Child compilation failed:
+ Module parse failed: Unexpected character '�' (1:0)
+ You may need an appropriate loader to handle this file type, currently no loaders are configured to process th is file.
+ See https://webpack.js.org/concepts#loaders
+ (Source code omitted for this binary file):
+ SyntaxError: Unexpected character '�' (1:0)
+ 
+ - compiler.js:79 childCompiler.runAsChild
+ [07_Webpack-inicial]/[html-webpack-plugin]/lib/compil er.js:79:16
+ 
+ - Compiler.js:343 compile
+ [07_Webpack-inicial]/[webpack]/lib/Compiler.js:343:11
+ - Compiler.js:681 hooks.afterCompile.callAsync.err
+ [07_Webpack-inicial]/[webpack]/lib/Compiler.js:681:15
+ 
+ - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+ [07_Webpack-inicial]/[tapable]/lib/Hook.js:154:20
+ 
+ - Compiler.js:678 compilation.seal.err
+ [07_Webpack-inicial]/[webpack]/lib/Compiler.js:678:31
+ 
+ - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+ [07_Webpack-inicial]/[tapable]/lib/Hook.js:154:20
+ 
+ - Compilation.js:1423 hooks.optimizeAssets.callAsync.er r
+ [07_Webpack-inicial]/[webpack]/lib/Compilation.js:142 3:35 -->
+
+</body>
+
+</html>
